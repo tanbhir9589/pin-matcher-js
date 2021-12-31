@@ -86,11 +86,10 @@
 
           
                 document.getElementById("submitBtn").addEventListener("click",function(){
-                    const pin = document.getElementById("generatePinDisplay").value;
+                const pin = document.getElementById("generatePinDisplay").value;
                 const keyPadNumber = document.getElementById("keyPadDisplay").value;
                 const successMessages = document.getElementById("success-msg");
                 const failMessages = document.getElementById("fail-msg");
-               
                 if (pin == keyPadNumber) {
                      successMessages.style.display = 'block';
                      failMessages.style.display = 'none';
@@ -100,7 +99,7 @@
                      failMessages.style.display = 'block';
                 }
 
-                })
+              })
                 
             
              
